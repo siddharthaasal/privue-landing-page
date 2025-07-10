@@ -22,7 +22,7 @@ const Solutions = () => {
         <section
             id="solutions"
             className="max-container px-6 md:px-12 lg:px-20 py-16">
-            <div className="flex flex-col justify-start gap-5 mb-12 text-center md:text-left">
+            <div className="flex flex-col justify-start gap-5 mb-16 text-center md:text-left">
                 <h2 className="text-4xl md:text-5xl font-palanquin font-bold">
                     Our <span className="text-coral-red">Solutions</span>
                 </h2>

@@ -2,36 +2,37 @@ import { lazy, Suspense } from "react";
 
 const WorldMap = lazy(() => import("./ui/world-map"));
 
-
 export default function Hero() {
     return (
         <section
             id="home"
-            className="w-full flex flex-col xl:flex-row justify-between items-center gap-10 px-6 md:px-12 lg:px-20 py-10"
+            className="w-full flex flex-col xl:flex-row items-center justify-between gap-16 px-6 md:px-12 lg:px-20 py-20 bg-white"
         >
             {/* Info Section */}
-            <div className="relative w-full xl:w-2/4 flex flex-col justify-center items-start">
-                <p className="text-xl font-montserrat text-coral-red">
+            <div className="w-full xl:w-2/5 flex flex-col justify-center items-start text-left">
+                <p className="text-lg md:text-xl font-montserrat text-coral-red font-medium">
                     Clear summaries, not tables of data
                 </p>
 
-                <h1 className="mt-10 font-palanquin text-xl sm:text-3xl lg:text-5xl leading-tight font-bold">
-                    <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-4">
+                <h1 className="mt-6 font-palanquin text-3xl md:text-5xl leading-tight font-bold text-slate-900">
+                    <span className="relative z-10 pr-2">
                         Empowering Businesses via
                     </span>
                     <br />
-                    <span className="text-coral-red inline-block mt-3">Intelligent</span> Data
+                    <span className="text-coral-red inline-block mt-2">Intelligent</span>{" "}
+                    Data
                 </h1>
 
-                <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-10 sm:max-w-md">
-                    Access unparalleled business data and insights to identify new opportunities,
-                    mitigate risks, and build trusted relationships that drive your success.
+                <p className="font-montserrat text-base md:text-lg text-slate-600 leading-relaxed mt-6 mb-10 max-w-xl">
+                    Access unparalleled business data and insights to identify new
+                    opportunities, mitigate risks, and build trusted relationships that
+                    drive your success.
                 </p>
             </div>
 
             {/* Map Section */}
-            <div className="relative w-full xl:flex-1 flex justify-center items-center min-h-[500px]">
-                <div className="relative w-full h-full max-h-[600px] flex justify-center items-center rounded-xl shadow-l bg-white border border-gray-200 overflow-hidden">
+            <div className="w-full xl:w-3/5 flex justify-center items-center min-h-[400px]">
+                <div className="w-full max-w-3xl h-[400px] md:h-[500px] lg:h-[500px] rounded-2xl bg-white border border-gray-200 shadow-xl overflow-hidden p-4 md:p-6 flex justify-center items-center ">
                     <Suspense fallback={<div>Loading map...</div>}>
                         <WorldMap
                             dots={[

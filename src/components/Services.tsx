@@ -9,7 +9,7 @@ const ServiceCard = ({ imgURL, label, subtext }: any) => {
             <h3 className="mt-6 font-palanquin text-2xl font-bold text-slate-800">
                 {label}
             </h3>
-            <p className="mt-3 text-base font-montserrat text-slate-600 leading-relaxed">
+            <p className="mt-3 text-base text-justify font-montserrat text-slate-600 leading-relaxed">
                 {subtext}
             </p>
         </div>
@@ -23,7 +23,7 @@ const Services = () => {
         <section
             id="services"
             className="max-container px-6 md:px-12 lg:px-20 py-16">
-            <div className="text-left mb-12">
+            <div className="text-left mb-16">
                 <h2 className="text-4xl md:text-5xl font-palanquin font-bold text-slate-900">
                     What <span className="text-coral-red">We</span> Offer
                 </h2>

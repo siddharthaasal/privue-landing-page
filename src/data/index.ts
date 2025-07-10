@@ -4,6 +4,7 @@ import sentimentAnalysis from "../assets/sentimentAnalysis.png";
 import s1 from "../assets/s1.jpg";
 import s2 from "../assets/s2.jpg";
 import s3 from "../assets/s3.jpg";
+import linkedin from "../assets/linkedin.png";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -44,4 +45,48 @@ export const solutions = [
         imgURL: s3,
         name: "Navigating Global Supplier Selection: Screening for Trust and Compliance",
     },
+];
+
+export const faqs = [
+    {
+        question: "What is the source of your data?",
+        answer: "We collaborate with a curated selection of marquee data providers to cater to a wide range of needs. You can subscribe to datasets through our marketplace and seamlessly access them within the workstation."
+    },
+    {
+        question: "Can we continue using our current providers them on this platform?",
+        answer: "Yes. If your data provider can develop an adopter, we can integrate it with our platform, allowing your teams to continue using their preferred datasets."
+    },
+    {
+        question: "Will our data and files be exposed to the internet?",
+        answer: "No. Our private cloud option ensures that you maintain full control over your data and infrastructure, providing the highest level of security and privacy."
+    },
+    {
+        question: "Is it mandatory to use the platform and workstation?",
+        answer: "No. Our client success team can integrate an API that triggers from your workflow system, enabling structured data and report transmission without requiring direct use of the platform."
+    },
+];
+
+
+export const footerLinks = [
+
+    {
+        title: "Help",
+        links: [
+            { name: "Home", link: "#home" },
+            { name: "Solutions", link: "#solutions" },
+            { name: "Services", link: "#services" },
+            { name: "FAQs", link: "#faqs" },
+        ],
+    },
+    {
+        title: "Get in touch",
+        links: [
+            { name: "sample@email.in", link: "mailto:sample@email.in" },
+            { name: "+9123456789", link: "tel:+9123456789" },
+        ],
+    },
+];
+
+export const socialMedia = [
+    { src: linkedin, alt: "linkedin logo" },
 ];
