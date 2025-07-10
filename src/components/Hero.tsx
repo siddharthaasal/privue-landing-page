@@ -7,7 +7,7 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="w-full flex flex-col xl:flex-row justify-between items-center gap-10 px-6 md:px-12 lg:px-28 py-10"
+            className="w-full flex flex-col xl:flex-row justify-between items-center gap-10 px-6 md:px-12 lg:px-20 py-10"
         >
             {/* Info Section */}
             <div className="relative w-full xl:w-2/4 flex flex-col justify-center items-start">

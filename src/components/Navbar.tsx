@@ -3,7 +3,7 @@ import { navLinks } from "../data/index";
 export default function Navbar() {
     return (
         <>
-            <header className="w-full  px-8 py-5">
+            <header className="w-full sticky  px-8 py-5">
                 <nav className="flex flex-row justify-between align-center">
                     <div className="text-xl font-extrabold">
                         <a href="/">
