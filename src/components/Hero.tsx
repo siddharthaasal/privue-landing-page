@@ -14,7 +14,7 @@ export default function Hero() {
                     Clear summaries, not tables of data
                 </p>
 
-                <h1 className="mt-6 font-palanquin text-3xl md:text-5xl leading-tight font-bold text-slate-900">
+                <h1 className="mt-6 font-palanquin text-4xl md:text-5xl leading-tight font-bold text-slate-900">
                     <span className="relative z-10 pr-2">
                         Empowering Businesses via
                     </span>
@@ -31,7 +31,7 @@ export default function Hero() {
             </div>
 
             {/* Map Section */}
-            <div className="w-full xl:w-3/5 flex justify-center items-center min-h-[400px]">
+            <div className="hidden md:flex w-full xl:w-3/5 justify-center items-center min-h-[400px]">
                 <div className="w-full max-w-3xl h-[400px] md:h-[500px] lg:h-[500px] rounded-2xl bg-white border border-gray-200 shadow-xl overflow-hidden p-4 md:p-6 flex justify-center items-center ">
                     <Suspense fallback={<div>Loading map...</div>}>
                         <WorldMap
